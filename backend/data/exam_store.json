@@ -1,0 +1,915 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "username": "admin",
+      "password": "admin123",
+      "name": "Dr. Ramesh Rao",
+      "role": "admin",
+      "designation": "Controller of Examinations"
+    },
+    {
+      "id": "usr-examiner-1",
+      "username": "examiner",
+      "password": "exam123",
+      "name": "Prof. S. K. Sharma",
+      "role": "examiner",
+      "department": "Department of Computer Science",
+      "designation": "Senior Paper Setter"
+    },
+    {
+      "id": "usr-examiner-2",
+      "username": "teacher1",
+      "password": "teach123",
+      "name": "Dr. Meera Iyer",
+      "role": "examiner",
+      "department": "Department of Electronics",
+      "designation": "Associate Professor"
+    }
+  ],
+  "students": [
+    {
+      "rollNumber": "24AI001",
+      "apaarId": "APAAR-2024-AIML-001",
+      "name": "Aditya Varma",
+      "branch": "AIML",
+      "section": "A"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-1789455078589",
+      "title": "Cafe Order Management System Assessment",
+      "code": "CS402-JAVA",
+      "description": "Object-Oriented Programming & Multi-line Command Architecture using Java / Python.",
+      "type": "coding",
+      "durationMinutes": 45,
+      "totalMarks": 50,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "IT",
+        "ECE",
+        "ALL"
+      ],
+      "targetSections": [
+        "A",
+        "B",
+        "ALL"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-01T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z",
+      "createdAt": "2026-09-15T06:51:18.589Z"
+    },
+    {
+      "id": "exam-101",
+      "title": "Python Core & Algorithmic Problem Solving",
+      "code": "CS301-P",
+      "description": "Hands-on coding exam assessing basic input/output handling, string algorithms, and loops.",
+      "type": "coding",
+      "durationMinutes": 45,
+      "totalMarks": 30,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "IT",
+        "ECE"
+      ],
+      "targetSections": [
+        "A",
+        "B"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-01T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "exam-102",
+      "title": "Operating Systems & Networks Bits Assessment",
+      "code": "CS204-B",
+      "description": "Comprehensive multiple choice bits exam covering process scheduling, TCP/IP, and memory paging.",
+      "type": "bits",
+      "durationMinutes": 30,
+      "totalMarks": 25,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "ECE"
+      ],
+      "targetSections": [
+        "A",
+        "B"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-02T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z",
+      "createdAt": "2026-09-02T08:30:00.000Z"
+    },
+    {
+      "id": "exam-103",
+      "title": "Data Structures & Algorithms Comprehensive Mid-Term",
+      "code": "CS201-M",
+      "description": "Mixed assessment featuring 3 conceptual bits and 1 implementation coding challenge.",
+      "type": "mixed",
+      "durationMinutes": 50,
+      "totalMarks": 35,
+      "targetBranches": [
+        "AIML",
+        "CSE"
+      ],
+      "targetSections": [
+        "A",
+        "B"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-05T09:00:00.000Z",
+      "endDate": "2026-09-30T20:00:00.000Z",
+      "createdAt": "2026-09-05T08:00:00.000Z"
+    },
+    {
+      "id": "exam-104",
+      "title": "SAP S/4HANA Enterprise Systems Assessment",
+      "code": "SAP401-E",
+      "description": "Enterprise evaluation on organizational structures, transactional document flows, and S/4HANA architecture.",
+      "type": "sap",
+      "durationMinutes": 30,
+      "totalMarks": 20,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "IT"
+      ],
+      "targetSections": [
+        "A",
+        "B"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-05T09:00:00.000Z",
+      "endDate": "2026-09-30T20:00:00.000Z",
+      "createdAt": "2026-09-05T08:00:00.000Z"
+    },
+    {
+      "id": "exam-105",
+      "title": "Web Technologies & Protocols Fill-in-Blanks",
+      "code": "IT302-F",
+      "description": "Specialized test assessing precise terminology, protocol ports, and architectural concepts.",
+      "type": "fill_blanks",
+      "durationMinutes": 25,
+      "totalMarks": 20,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "IT"
+      ],
+      "targetSections": [
+        "A",
+        "B"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-02T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z"
+    },
+    {
+      "id": "exam-106",
+      "title": "Computer Organization & Architecture Hybrid Test",
+      "code": "CS202-H",
+      "description": "Mixed assessment combining rapid-fire MCQ bits with technical fill-in-the-blank questions.",
+      "type": "bits_blanks",
+      "durationMinutes": 35,
+      "totalMarks": 30,
+      "targetBranches": [
+        "AIML",
+        "CSE"
+      ],
+      "targetSections": [
+        "A",
+        "B"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-03T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z"
+    },
+    {
+      "id": "exam-108",
+      "title": "Data Structures & Algorithms: Search & Two-Sum Sprint",
+      "code": "CS305-DSA",
+      "description": "High-speed algorithmic coding challenge covering Target Pair Two-Sum and Binary Search.",
+      "type": "coding",
+      "durationMinutes": 40,
+      "totalMarks": 50,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "IT",
+        "ECE",
+        "ALL"
+      ],
+      "targetSections": [
+        "A",
+        "B",
+        "ALL"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-01T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z"
+    },
+    {
+      "id": "exam-109",
+      "title": "Full-Stack JavaScript: Order Inventory Calculator",
+      "code": "IT304-JS",
+      "description": "JavaScript / Node.js data transformation and cart total calculation with taxes & discounts.",
+      "type": "coding",
+      "durationMinutes": 30,
+      "totalMarks": 30,
+      "targetBranches": [
+        "AIML",
+        "CSE",
+        "IT",
+        "ALL"
+      ],
+      "targetSections": [
+        "A",
+        "B",
+        "ALL"
+      ],
+      "shuffleEnabled": true,
+      "status": "active",
+      "startDate": "2026-09-01T09:00:00.000Z",
+      "endDate": "2026-09-30T18:00:00.000Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-101-1",
+      "examId": "exam-101",
+      "type": "coding",
+      "questionText": "Problem 1: Palindrome String Checker",
+      "problemStatement": "Read a single word from standard input. If the string is identical forwards and backwards (case-insensitive), print \"[word] is palindrome\". Otherwise print \"[word] is not palindrome\".",
+      "constraints": "String length <= 100 characters. Letters only.",
+      "starterCode": "# Read input from stdin\nword = input().strip()\n# Write your solution below\n",
+      "allowedLanguages": [
+        "python",
+        "javascript"
+      ],
+      "marks": 15,
+      "testCases": [
+        {
+          "input": "radar",
+          "expectedOutput": "radar is palindrome",
+          "isHidden": false
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "hello is not palindrome",
+          "isHidden": false
+        },
+        {
+          "input": "Racecar",
+          "expectedOutput": "Racecar is palindrome",
+          "isHidden": true
+        },
+        {
+          "input": "antigravity",
+          "expectedOutput": "antigravity is not palindrome",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": "q-101-2",
+      "examId": "exam-101",
+      "type": "coding",
+      "questionText": "Problem 2: Sum of Even Numbers in an Array",
+      "problemStatement": "Read space-separated integers from standard input. Calculate and print the sum of only the even numbers.",
+      "constraints": "-1000 <= number <= 1000. Up to 100 integers.",
+      "starterCode": "# Read space separated numbers from input\nnums = list(map(int, input().split()))\n# Compute even sum and print it\n",
+      "allowedLanguages": [
+        "python",
+        "javascript"
+      ],
+      "marks": 15,
+      "testCases": [
+        {
+          "input": "2 4 5 7 8",
+          "expectedOutput": "14",
+          "isHidden": false
+        },
+        {
+          "input": "1 3 5 7 9",
+          "expectedOutput": "0",
+          "isHidden": false
+        },
+        {
+          "input": "10 20 30",
+          "expectedOutput": "60",
+          "isHidden": true
+        },
+        {
+          "input": "-2 4 -6 7",
+          "expectedOutput": "-4",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": "q-102-1",
+      "examId": "exam-102",
+      "type": "mcq",
+      "questionText": "Which OSI layer is primarily responsible for end-to-end reliable transmission and flow control?",
+      "options": [
+        "Network Layer",
+        "Transport Layer",
+        "Data Link Layer",
+        "Session Layer"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 5,
+      "explanation": "The Transport layer (Layer 4) handles host-to-host communication, connection reliability (e.g. TCP), and flow control."
+    },
+    {
+      "id": "q-102-2",
+      "examId": "exam-102",
+      "type": "mcq",
+      "questionText": "Which condition is NOT a mandatory Coffman condition for a Deadlock to occur?",
+      "options": [
+        "Mutual Exclusion",
+        "Hold and Wait",
+        "Preemption Allowed",
+        "Circular Wait"
+      ],
+      "correctOptionIndex": 2,
+      "marks": 5,
+      "explanation": "For deadlock, No Preemption is required. If preemption is allowed, deadlock cannot happen."
+    },
+    {
+      "id": "q-102-3",
+      "examId": "exam-102",
+      "type": "mcq",
+      "questionText": "In Operating Systems, Belady's Anomaly occurs in which page replacement algorithm?",
+      "options": [
+        "LRU (Least Recently Used)",
+        "FIFO (First In First Out)",
+        "Optimal Page Replacement",
+        "Clock Algorithm"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 5,
+      "explanation": "Belady's Anomaly is the phenomenon where increasing the number of page frames results in an increase in the number of page faults for FIFO."
+    },
+    {
+      "id": "q-102-4",
+      "examId": "exam-102",
+      "type": "mcq",
+      "questionText": "What is the default port used by HTTPS protocol for secure communication?",
+      "options": [
+        "80",
+        "8080",
+        "443",
+        "22"
+      ],
+      "correctOptionIndex": 2,
+      "marks": 5,
+      "explanation": "HTTPS operates by default on port 443, while unencrypted HTTP operates on port 80."
+    },
+    {
+      "id": "q-102-5",
+      "examId": "exam-102",
+      "type": "mcq",
+      "questionText": "Which CPU scheduling algorithm is non-preemptive by default and may suffer from the Convoy Effect?",
+      "options": [
+        "First-Come First-Served (FCFS)",
+        "Round Robin",
+        "Shortest Remaining Time First",
+        "Multilevel Queue"
+      ],
+      "correctOptionIndex": 0,
+      "marks": 5,
+      "explanation": "FCFS can lead to the convoy effect where short processes wait behind a long CPU-burst process."
+    },
+    {
+      "id": "q-103-1",
+      "examId": "exam-103",
+      "type": "mcq",
+      "questionText": "What is the worst-case time complexity of QuickSort when a poor pivot is selected?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctOptionIndex": 2,
+      "marks": 5,
+      "explanation": "When the array is already sorted and the first/last element is picked as pivot, QuickSort degrades to O(n²)."
+    },
+    {
+      "id": "q-103-2",
+      "examId": "exam-103",
+      "type": "mcq",
+      "questionText": "Which data structure follows the LIFO (Last In First Out) principle?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Binary Tree"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 5,
+      "explanation": "Stacks adhere to LIFO where the last inserted element is the first to be popped."
+    },
+    {
+      "id": "q-103-3",
+      "examId": "exam-103",
+      "type": "mcq",
+      "questionText": "Which tree traversal visits nodes in non-decreasing order for a Binary Search Tree (BST)?",
+      "options": [
+        "Preorder",
+        "Inorder",
+        "Postorder",
+        "Level Order"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 5,
+      "explanation": "Inorder traversal (Left, Root, Right) of a valid BST always yields elements in ascending sorted order."
+    },
+    {
+      "id": "q-103-4",
+      "examId": "exam-103",
+      "type": "coding",
+      "questionText": "Coding Challenge: Maximum Element and Its Frequency",
+      "problemStatement": "Given space-separated integers on standard input, print the maximum number and how many times it appeared, separated by a space.\nExample: input \"3 7 2 7 5 7\" -> output \"7 3\"",
+      "constraints": "At least 1 integer. Numbers between -10000 and 10000.",
+      "starterCode": "# Read numbers and find max + frequency\nnums = list(map(int, input().split()))\n# Write solution here\n",
+      "allowedLanguages": [
+        "python",
+        "javascript"
+      ],
+      "marks": 20,
+      "testCases": [
+        {
+          "input": "3 7 2 7 5 7",
+          "expectedOutput": "7 3",
+          "isHidden": false
+        },
+        {
+          "input": "5 5 5 5",
+          "expectedOutput": "5 4",
+          "isHidden": false
+        },
+        {
+          "input": "99",
+          "expectedOutput": "99 1",
+          "isHidden": true
+        },
+        {
+          "input": "-10 -5 -5 -20",
+          "expectedOutput": "-5 2",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": "q-104-1",
+      "examId": "exam-104",
+      "type": "multi_select",
+      "scenarioContext": "An enterprise order-to-cash process requires automated billing and financial document posting.",
+      "questionText": "Which two organizational elements are mandatory to define a valid Sales Area in SAP S/4HANA? (Select 2 correct answers)",
+      "options": [
+        "Sales Organization",
+        "Plant Code",
+        "Distribution Channel",
+        "Storage Location"
+      ],
+      "correctOptionIndices": [
+        0,
+        2
+      ],
+      "marks": 6,
+      "explanation": "A Sales Area in SAP SD is uniquely formed by Sales Organization, Distribution Channel, and Division."
+    },
+    {
+      "id": "q-104-2",
+      "examId": "exam-104",
+      "type": "mcq",
+      "questionText": "What is the primary database technology foundation of SAP S/4HANA?",
+      "options": [
+        "Oracle Exadata",
+        "SAP HANA In-Memory Engine",
+        "Microsoft SQL Server",
+        "IBM DB2"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 4,
+      "explanation": "SAP HANA is SAP's proprietary column-oriented in-memory database engine."
+    },
+    {
+      "id": "q-104-3",
+      "examId": "exam-104",
+      "type": "fill_blank",
+      "questionText": "In SAP Materials Management, the single-screen transaction code used to create a standard Purchase Order is _____.",
+      "correctAnswer": "ME21N",
+      "acceptedAnswers": [
+        "ME21N",
+        "me21n"
+      ],
+      "marks": 5,
+      "explanation": "ME21N is the standard single-screen transaction code for Purchase Order creation."
+    },
+    {
+      "id": "q-104-4",
+      "examId": "exam-104",
+      "type": "multi_select",
+      "scenarioContext": "A manufacturing firm is mapping organizational units across financial accounting and controlling.",
+      "questionText": "Which of the following are core financial organizational units in SAP ERP? (Select 2 correct answers)",
+      "options": [
+        "Company Code",
+        "Shipping Point",
+        "Controlling Area",
+        "Purchasing Group"
+      ],
+      "correctOptionIndices": [
+        0,
+        2
+      ],
+      "marks": 5,
+      "explanation": "Company Code (FI) and Controlling Area (CO) are the fundamental accounting entities in SAP."
+    },
+    {
+      "id": "q-105-1",
+      "examId": "exam-105",
+      "type": "fill_blank",
+      "questionText": "The architectural style that uses standard HTTP methods (GET, POST, PUT, DELETE) and stateless communication is known as _____.",
+      "correctAnswer": "REST",
+      "acceptedAnswers": [
+        "REST",
+        "RESTful",
+        "REST API",
+        "Representational State Transfer"
+      ],
+      "marks": 5,
+      "explanation": "REST is the architectural standard for modern web APIs."
+    },
+    {
+      "id": "q-105-2",
+      "examId": "exam-105",
+      "type": "fill_blank",
+      "questionText": "The cryptographic security protocol that replaced SSL to provide end-to-end transport encryption is _____.",
+      "correctAnswer": "TLS",
+      "acceptedAnswers": [
+        "TLS",
+        "Transport Layer Security"
+      ],
+      "marks": 5,
+      "explanation": "TLS is the modern successor to SSL."
+    },
+    {
+      "id": "q-105-3",
+      "examId": "exam-105",
+      "type": "fill_blank",
+      "questionText": "The standard TCP port number used by DNS resolvers for hostname query resolution is _____.",
+      "correctAnswer": "53",
+      "acceptedAnswers": [
+        "53",
+        "Port 53"
+      ],
+      "marks": 5,
+      "explanation": "DNS operates on port 53."
+    },
+    {
+      "id": "q-105-4",
+      "examId": "exam-105",
+      "type": "fill_blank",
+      "questionText": "In React, the built-in Hook used to execute side effects like data fetching or event subscriptions is _____.",
+      "correctAnswer": "useEffect",
+      "acceptedAnswers": [
+        "useEffect",
+        "useEffect()"
+      ],
+      "marks": 5,
+      "explanation": "useEffect handles side effects in React."
+    },
+    {
+      "id": "q-106-1",
+      "examId": "exam-106",
+      "type": "mcq",
+      "questionText": "Which memory type resides directly on the CPU chip and provides the fastest data access?",
+      "options": [
+        "L1 Cache",
+        "DRAM Main Memory",
+        "NVMe SSD",
+        "Virtual Memory"
+      ],
+      "correctOptionIndex": 0,
+      "marks": 5,
+      "explanation": "L1 cache has nanosecond latency directly on CPU."
+    },
+    {
+      "id": "q-106-2",
+      "examId": "exam-106",
+      "type": "fill_blank",
+      "questionText": "The digital register in the CPU that stores the memory address of the NEXT instruction to be fetched is called the _____.",
+      "correctAnswer": "Program Counter",
+      "acceptedAnswers": [
+        "Program Counter",
+        "PC",
+        "Instruction Pointer"
+      ],
+      "marks": 5,
+      "explanation": "The Program Counter holds the address of the next instruction."
+    },
+    {
+      "id": "q-106-3",
+      "examId": "exam-106",
+      "type": "mcq",
+      "questionText": "In pipelining, what type of hazard occurs when an instruction requires data not yet written by a prior instruction?",
+      "options": [
+        "Structural Hazard",
+        "Data Hazard",
+        "Control Hazard",
+        "Branch Hazard"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 5,
+      "explanation": "Data hazards occur from RAW dependencies."
+    },
+    {
+      "id": "q-106-4",
+      "examId": "exam-106",
+      "type": "fill_blank",
+      "questionText": "A high-speed buffer inside the memory management unit (MMU) used to cache virtual-to-physical address translations is the _____.",
+      "correctAnswer": "TLB",
+      "acceptedAnswers": [
+        "TLB",
+        "Translation Lookaside Buffer"
+      ],
+      "marks": 5,
+      "explanation": "TLB avoids page table walks in RAM."
+    },
+    {
+      "id": "q-106-5",
+      "examId": "exam-106",
+      "type": "mcq",
+      "questionText": "In Amdahl's Law, what limits the maximum speedup achievable by adding infinite parallel processing cores?",
+      "options": [
+        "Clock Frequency",
+        "Serial Execution Fraction",
+        "Bus Bandwidth",
+        "Cache Line Size"
+      ],
+      "correctOptionIndex": 1,
+      "marks": 10,
+      "explanation": "The sequential portion bounds speedup."
+    },
+    {
+      "id": "q-108-1",
+      "examId": "exam-108",
+      "type": "coding",
+      "questionText": "Problem 1: Target Pair Two-Sum Indices",
+      "problemStatement": "Given an array of integers on line 1 and a target integer on line 2, find the two numbers such that they add up to the specific target.\nPrint their 0-based indices separated by a space.",
+      "constraints": "2 <= Array length <= 1000. Exactly one valid answer exists.",
+      "starterCode": "nums = list(map(int, input().split()))\ntarget = int(input())\nfor i in range(len(nums)):\n    for j in range(i + 1, len(nums)):\n        if nums[i] + nums[j] == target:\n            print(f\"{i} {j}\")\n            break\n",
+      "allowedLanguages": [
+        "python",
+        "java",
+        "javascript"
+      ],
+      "marks": 25,
+      "testCases": [
+        {
+          "input": "2 7 11 15\n9",
+          "expectedOutput": "0 1",
+          "isHidden": false
+        },
+        {
+          "input": "3 2 4\n6",
+          "expectedOutput": "1 2",
+          "isHidden": false
+        },
+        {
+          "input": "3 3\n6",
+          "expectedOutput": "0 1",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": "q-108-2",
+      "examId": "exam-108",
+      "type": "coding",
+      "questionText": "Problem 2: Binary Search in Sorted Array",
+      "problemStatement": "Given a sorted array of integers on line 1 and a target value on line 2, write a function to search target in nums.\nIf target exists, print its 0-based index. Otherwise, print -1.",
+      "constraints": "Sorted ascending array.",
+      "starterCode": "nums = list(map(int, input().split()))\ntarget = int(input())\nprint(nums.index(target) if target in nums else -1)\n",
+      "allowedLanguages": [
+        "python",
+        "java",
+        "javascript"
+      ],
+      "marks": 25,
+      "testCases": [
+        {
+          "input": "1 3 5 7 9 11\n7",
+          "expectedOutput": "3",
+          "isHidden": false
+        },
+        {
+          "input": "10 20 30 40\n20",
+          "expectedOutput": "1",
+          "isHidden": false
+        },
+        {
+          "input": "2 4 6 8 10\n5",
+          "expectedOutput": "-1",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": "q-109-1",
+      "examId": "exam-109",
+      "type": "coding",
+      "questionText": "Problem 1: Cart Discount & Tax Calculator",
+      "problemStatement": "Read multiple lines of input with price and quantity until 0 0. Compute subtotal, apply 10% discount if > 100, add 5% tax. Print Final Total: <total>",
+      "constraints": "Prices > 0, quantities >= 1.",
+      "starterCode": "let subtotal = 0;\nwhile (true) {\n  const line = input();\n  if (!line || line === \"0 0\") break;\n  const [p, q] = line.trim().split(/\\s+/).map(Number);\n  if (!isNaN(p) && !isNaN(q)) subtotal += p * q;\n}\nconst discount = subtotal > 100 ? subtotal * 0.10 : 0;\nconst afterDiscount = subtotal - discount;\nconst tax = afterDiscount * 0.05;\nconst finalTotal = afterDiscount + tax;\nconsole.log(\"Final Total: \" + finalTotal.toFixed(2));\n",
+      "allowedLanguages": [
+        "javascript",
+        "python",
+        "java"
+      ],
+      "marks": 30,
+      "testCases": [
+        {
+          "input": "25.0 2\n30.0 2\n0 0",
+          "expectedOutput": "Final Total: 103.95",
+          "isHidden": false
+        },
+        {
+          "input": "10.0 2\n0 0",
+          "expectedOutput": "Final Total: 21.00",
+          "isHidden": false
+        },
+        {
+          "input": "100.0 2\n0 0",
+          "expectedOutput": "Final Total: 189.00",
+          "isHidden": true
+        }
+      ]
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-1792761889642",
+      "submittedAt": "2026-10-23T13:24:49.642Z",
+      "examId": "exam-101",
+      "examTitle": "Python Core & Algorithmic Problem Solving",
+      "rollNumber": "24AI001",
+      "studentName": "Aditya Varma",
+      "branch": "AIML",
+      "section": "A",
+      "score": 0,
+      "totalMarks": 30,
+      "percentage": 0,
+      "grade": "F",
+      "tabSwitchCount": 0,
+      "answers": {},
+      "codeAnswers": {
+        "q-101-2": {
+          "code": "# Read space separated numbers from input\nnums = list(map(int, input().split()))\n# Compute even sum and print it\n",
+          "language": "python"
+        },
+        "q-101-1": {
+          "code": "# Read input from stdin\nword = input().strip()\n# Write your solution below\n",
+          "language": "python"
+        }
+      },
+      "breakdowns": [
+        {
+          "questionId": "q-101-1",
+          "type": "coding",
+          "questionText": "Problem 1: Palindrome String Checker",
+          "code": "# Read input from stdin\nword = input().strip()\n# Write your solution below\n",
+          "language": "python",
+          "isCorrect": false,
+          "passedCount": 0,
+          "totalTestCases": 4,
+          "marksPossible": 15,
+          "marksEarned": 0,
+          "testCaseResults": [
+            {
+              "testCaseNumber": 1,
+              "input": "radar",
+              "expectedOutput": "radar is palindrome",
+              "actualOutput": "",
+              "passed": false,
+              "executionTimeMs": 102,
+              "error": null,
+              "timedOut": false,
+              "isHidden": false
+            },
+            {
+              "testCaseNumber": 2,
+              "input": "hello",
+              "expectedOutput": "hello is not palindrome",
+              "actualOutput": "",
+              "passed": false,
+              "executionTimeMs": 76,
+              "error": null,
+              "timedOut": false,
+              "isHidden": false
+            },
+            {
+              "testCaseNumber": 3,
+              "input": "[Hidden Test Case]",
+              "expectedOutput": "[Hidden Output]",
+              "actualOutput": "[Hidden Failure]",
+              "passed": false,
+              "executionTimeMs": 77,
+              "error": null,
+              "timedOut": false,
+              "isHidden": true
+            },
+            {
+              "testCaseNumber": 4,
+              "input": "[Hidden Test Case]",
+              "expectedOutput": "[Hidden Output]",
+              "actualOutput": "[Hidden Failure]",
+              "passed": false,
+              "executionTimeMs": 70,
+              "error": null,
+              "timedOut": false,
+              "isHidden": true
+            }
+          ]
+        },
+        {
+          "questionId": "q-101-2",
+          "type": "coding",
+          "questionText": "Problem 2: Sum of Even Numbers in an Array",
+          "code": "# Read space separated numbers from input\nnums = list(map(int, input().split()))\n# Compute even sum and print it\n",
+          "language": "python",
+          "isCorrect": false,
+          "passedCount": 0,
+          "totalTestCases": 4,
+          "marksPossible": 15,
+          "marksEarned": 0,
+          "testCaseResults": [
+            {
+              "testCaseNumber": 1,
+              "input": "2 4 5 7 8",
+              "expectedOutput": "14",
+              "actualOutput": "",
+              "passed": false,
+              "executionTimeMs": 69,
+              "error": null,
+              "timedOut": false,
+              "isHidden": false
+            },
+            {
+              "testCaseNumber": 2,
+              "input": "1 3 5 7 9",
+              "expectedOutput": "0",
+              "actualOutput": "",
+              "passed": false,
+              "executionTimeMs": 76,
+              "error": null,
+              "timedOut": false,
+              "isHidden": false
+            },
+            {
+              "testCaseNumber": 3,
+              "input": "[Hidden Test Case]",
+              "expectedOutput": "[Hidden Output]",
+              "actualOutput": "[Hidden Failure]",
+              "passed": false,
+              "executionTimeMs": 68,
+              "error": null,
+              "timedOut": false,
+              "isHidden": true
+            },
+            {
+              "testCaseNumber": 4,
+              "input": "[Hidden Test Case]",
+              "expectedOutput": "[Hidden Output]",
+              "actualOutput": "[Hidden Failure]",
+              "passed": false,
+              "executionTimeMs": 71,
+              "error": null,
+              "timedOut": false,
+              "isHidden": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

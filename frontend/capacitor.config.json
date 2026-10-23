@@ -1,0 +1,9 @@
+{
+  "appId": "com.examconduct.app",
+  "appName": "ExamMatrix",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "exam-conducting-system",
+  "version": "1.0.0",
+  "description": "Complete Autonomous Android Examination Conducting System",
+  "scripts": {
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "cd backend && npm test",
+    "android:sync": "cd frontend && npx cap sync android",
+    "android:build": "cd frontend/android && gradlew assembleDebug"
+  }
+}
